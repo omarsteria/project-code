@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Room/Desk Booking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1> SS Room/Desk Booking </h1>
+
+        <!-- Room Map -->
+        <div class="map-container">
+            <h2>Select a Room/Desk on the Map</h2>
+            <div class="map">
+                <img src="map.svg" alt="Room Map" usemap="#roommap">
+
+                <map name="roommap">
+                    <!-- Add new rooms and desks -->
+                    <area shape="rect" coords="50,50,175,175" href="#" alt="Room 1" data-room="Room 1" class="map-room">
+                    <area shape="rect" coords="400,50,525,175" href="#" alt="Room 2" data-room="Room 2" class="map-room">
+                    <area shape="rect" coords="50,450,175,575" href="#" alt="Desk 1" data-room="Desk 1" class="map-room">
+                    <area shape="rect" coords="400,450,525,575" href="#" alt="Desk 2" data-room="Desk 2" class="map-room">
+
+                    <!-- Additional rooms and desks -->
+                    <area shape="rect" coords="750,50,875,175" href="#" alt="Room 3" data-room="Room 3" class="map-room">
+                    <area shape="rect" coords="1100,50,1225,175" href="#" alt="Room 4" data-room="Room 4" class="map-room">
+                    <area shape="rect" coords="1450,50,1575,175" href="#" alt="Room 5" data-room="Room 5" class="map-room">
+                    <area shape="rect" coords="1800,50,1925,175" href="#" alt="Room 6" data-room="Room 6" class="map-room">
+                    <area shape="rect" coords="750,450,875,575" href="#" alt="Desk 3" data-room="Desk 3" class="map-room">
+                    <area shape="rect" coords="1100,450,1225,575" href="#" alt="Desk 4" data-room="Desk 4" class="map-room">
+                    <area shape="rect" coords="1450,450,1575,575" href="#" alt="Desk 5" data-room="Desk 5" class="map-room">
+                    <area shape="rect" coords="1800,450,1925,575" href="#" alt="Desk 6" data-room="Desk 6" class="map-room">
+                </map>
+            </div>
+        </div>
+
+        <!-- Filter and Room Category -->
+        <div class="filter-container">
+            <label for="categoryFilter">Filter by Category:</label>
+            <select id="categoryFilter">
+                <option value="">All</option>
+                <option value="conference">Conference Rooms</option>
+                <option value="meeting">Meeting Rooms</option>
+                <option value="desk">Desks</option>
+            </select>
+        </div>
+
+        <!-- Booking Form -->
+        <div class="booking-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="selectedRoom">Selected Room/Desk:</label>
+            <input type="text" id="selectedRoom" required>
+
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" required>
+
+            <label for="startTime">Start Time:</label>
+            <input type="time" id="startTime" min="08:00" max="18:00" required>
+
+            <label for="endTime">End Time:</label>
+            <input type="time" id="endTime" min="08:00" max="18:00" required>
+
+            <button id="bookBtn">Book Now</button>
+        </div>
+
+        <!-- Availability Calendar -->
+        <h2>Room Availability</h2>
+        <div id="availabilityCalendar"></div>
+
+        <!-- Booking History -->
+        <h2>Booking History</h2>
+        <div id="bookingHistory"></div>
+
+        <!-- Admin Management -->
+        <div class="admin-tools">
+            <h2>Admin: Manage Bookings</h2>
+            <button id="clearBookings">Clear All Bookings</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

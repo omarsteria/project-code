@@ -1,0 +1,77 @@
+
+
+<svg width="2100" height="750" xmlns="http://www.w3.org/2000/svg">
+  <!-- Define styles within the SVG -->
+  <style>
+    .room {
+      fill: red;
+      stroke: black;
+      stroke-width: 2;
+      cursor: pointer;
+    }
+    .room.booked {
+      fill: red;
+    }
+    .room:hover {
+      fill: lightblue;
+    }
+    .room-text {
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      fill: white;
+      pointer-events: none; /* Allow clicks to pass through text to rect */
+    }
+  </style>
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#f2f2f2" />
+
+  <!-- Rooms and Desks -->
+  <!-- Room 1 -->
+  <rect x="50" y="50" width="250" height="250" fill="#a9cce3" stroke="#2c3e50" stroke-width="2"/>
+  <text x="175" y="175" font-family="Arial" font-size="20" fill="black" text-anchor="middle" dominant-baseline="middle">Room 1</text>
+
+  <!-- Room 2 -->
+  <rect x="400" y="50" width="250" height="250" fill="#a9cce3" stroke="#2c3e50" stroke-width="2"/>
+  <text x="525" y="175" font-family="Arial" font-size="20" fill="black" text-anchor="middle" dominant-baseline="middle">Room 2</text>
+
+  <!-- Desk 1 -->
+  <rect x="50" y="450" width="250" height="250" fill="#f7dc6f" stroke="#7d6608" stroke-width="2"/>
+  <text x="175" y="575" font-family="Arial" font-size="20" fill="black" text-anchor="middle" dominant-baseline="middle">Desk 1</text>
+
+  <!-- Desk 2 -->
+  <rect x="400" y="450" width="250" height="250" fill="#f7dc6f" stroke="#7d6608" stroke-width="2"/>
+  <text x="525" y="575" font-family="Arial" font-size="20" fill="black" text-anchor="middle" dominant-baseline="middle">Desk 2</text>
+
+  <!-- Room 3 -->
+  <rect x="750" y="50" width="250" height="250" fill="#a9cce3" stroke="#2c3e50" stroke-width="2"/>
+  <text x="875" y="175" font-family="Arial" font-size="20" fill="black" text-anchor="middle" dominant-baseline="middle">Room 3</text>
+
+  <!-- Room 4 -->
+  <rect x="1100" y="50" width="250" height="250" fill="#a9cce3" stroke="#2c3e50" stroke-width="2"/>
+  <text x="1225" y="175" font-family="Arial" font-size="20" fill="black" text-anchor="middle" dominant-baseline="middle">Room 4</text>
+
+  <!-- Desk 3 -->
+  <rect x="750" y="450" width="250" height="250" fill="#f7dc6f" stroke="#7d6608" stroke-width="2"/>
+  <text x="875" y="575" font-family="Arial" font-size="20" fill="black" text-anchor="middle" dominant-baseline="middle">Desk 3</text>
+
+  <!-- Desk 4 -->
+  <rect x="1100" y="450" width="250" height="250" fill="#f7dc6f" stroke="#7d6608" stroke-width="2"/>
+  <text x="1225" y="575" font-family="Arial" font-size="20" fill="black" text-anchor="middle" dominant-baseline="middle">Desk 4</text>
+
+  <!-- Room 5 -->
+  <rect x="1450" y="50" width="250" height="250" fill="#a9cce3" stroke="#2c3e50" stroke-width="2"/>
+  <text x="1575" y="175" font-family="Arial" font-size="20" fill="black" text-anchor="middle" dominant-baseline="middle">Room 5</text>
+
+  <!-- Room 6 -->
+  <rect x="1800" y="50" width="250" height="250" fill="#a9cce3" stroke="#2c3e50" stroke-width="2"/>
+  <text x="1925" y="175" font-family="Arial" font-size="20" fill="black" text-anchor="middle" dominant-baseline="middle">Room 6</text>
+
+  <!-- Desk 5 -->
+  <rect x="1450" y="450" width="250" height="250" fill="#f7dc6f" stroke="#7d6608" stroke-width="2"/>
+  <text x="1575" y="575" font-family="Arial" font-size="20" fill="black" text-anchor="middle" dominant-baseline="middle">Desk 5</text>
+
+  <!-- Desk 6 -->
+  <rect x="1800" y="450" width="250" height="250" fill="#f7dc6f" stroke="#7d6608" stroke-width="2"/>
+  <text x="1925" y="575" font-family="Arial" font-size="20" fill="black" text-anchor="middle" dominant-baseline="middle">Desk 6</text>
+
+</svg>
